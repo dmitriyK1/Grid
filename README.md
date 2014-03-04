@@ -178,4 +178,4 @@ There are some handy "make visible when small" and "hide when large" rules for y
 http://philipwalton.github.io/solved-by-flexbox/demos/grids/
 http://ionicframework.com/docs/components/#grid
 http://getbootstrap.com/css/#grid
-
+http://css-tricks.com/snippets/css/a-guide-to-flexbox/
