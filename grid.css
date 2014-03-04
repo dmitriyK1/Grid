@@ -37,8 +37,14 @@
 }
 
 /* Cell widths*/
+.cell-5 {
+  flex: 0 0 5%;
+}
 .cell-10 {
   flex: 0 0 10%;
+}
+.cell-15 {
+  flex: 0 0 15%;
 }
 .cell-20 {
   flex: 0 0 20%;
@@ -46,14 +52,38 @@
 .cell-25 {
   flex: 0 0 25%;
 }
+.cell-30 {
+  flex: 0 0 30%;
+}
 .cell-33 {
   flex: 0 0 33.3333%;
+}
+.cell-35 {
+  flex: 0 0 35%;
+}
+.cell-40 {
+  flex: 0 0 40%;
+}
+.cell-45 {
+  flex: 0 0 45%;
 }
 .cell-50 {
   flex: 0 0 50%;
 }
+.cell-55 {
+  flex: 0 0 55%;
+}
+.cell-60 {
+  flex: 0 0 60%;
+}
+.cell-65 {
+  flex: 0 0 65%;
+}
 .cell-66 {
   flex: 0 0 66.6666%;
+}
+.cell-70 {
+  flex: 0 0 70%;
 }
 .cell-75 {
   flex: 0 0 75%;
@@ -61,13 +91,25 @@
 .cell-80 {
   flex: 0 0 80%;
 }
+.cell-85 {
+  flex: 0 0 85%;
+}
 .cell-90 {
   flex: 0 0 90%;
 }
+.cell-95 {
+  flex: 0 0 95%;
+}
 
 /* Horizontal offsets */
+.cell-offset-5 {
+  margin-left: 5%;
+}
 .cell-offset-10 {
   margin-left: 10%;
+}
+.cell-offset-15 {
+  margin-left: 15%;
 }
 .cell-offset-20 {
   margin-left: 20%;
@@ -75,14 +117,38 @@
 .cell-offset-25 {
   margin-left: 25%;
 }
+.cell-offset-30 {
+  margin-left: 30%;
+}
 .cell-offset-33 {
   margin-left: 33.3333%;
+}
+.cell-offset-35 {
+  margin-left: 35%;
+}
+.cell-offset-40 {
+  margin-left: 40%;
+}
+.cell-offset-45 {
+  margin-left: 45%;
 }
 .cell-offset-50 {
   margin-left: 50%;
 }
+.cell-offset-55 {
+  margin-left: 55%;
+}
+.cell-offset-60 {
+  margin-left: 60%;
+}
+.cell-offset-65 {
+  margin-left: 65%;
+}
 .cell-offset-66 {
   margin-left: 66.6666%;
+}
+.cell-offset-70 {
+  margin-left: 70%;
 }
 .cell-offset-75 {
   margin-left: 75%;
@@ -90,8 +156,14 @@
 .cell-offset-80 {
   margin-left: 80%;
 }
+.cell-offset-85 {
+  margin-left: 85%;
+}
 .cell-offset-90 {
   margin-left: 90%;
+}
+.cell-offset-95 {
+  margin-left: 95%;
 }
 
 /* Responsive modifiers */
