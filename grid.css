@@ -1,8 +1,8 @@
 /*
-	Flexible Grid
-	---------------------------------------------
-	Unlimited cells with magic widths and heights
-	*/
+Flexible Grid
+---------------------------------------------
+Unlimited cells with magic widths and heights
+*/
 
 .grid {
   display: flex;
