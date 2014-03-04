@@ -1,9 +1,8 @@
 /*
-Flexible Grid
----------------------------------------------
-Unlimited cells with magic widths and heights
+  Flexible Grid
+  ---------------------------------------------
+  Unlimited cells with magic widths and heights
 */
-
 .grid {
   display: flex;
 }
@@ -14,8 +13,8 @@ Unlimited cells with magic widths and heights
   flex: 1;
   box-sizing: border-box;
 }
-/* Vertically align grid contents */
 
+/* Vertically align grid contents */
 .grid-top {
   align-items: flex-start;
 }
@@ -25,8 +24,8 @@ Unlimited cells with magic widths and heights
 .grid-bottom {
   align-items: flex-end;
 }
-/* Vertically align individual cells */
 
+/* Vertically align individual cells*/
 .cell-top {
   align-self: flex-start;
 }
@@ -36,8 +35,8 @@ Unlimited cells with magic widths and heights
 .cell-bottom {
   align-self: flex-end;
 }
-/* Cell widths */
 
+/* Cell widths*/
 .cell-10 {
   flex: 0 0 10%;
 }
@@ -65,8 +64,8 @@ Unlimited cells with magic widths and heights
 .cell-90 {
   flex: 0 0 90%;
 }
-/* Horizontal offsets */
 
+/* Horizontal offsets */
 .cell-offset-10 {
   margin-left: 10%;
 }
@@ -94,8 +93,8 @@ Unlimited cells with magic widths and heights
 .cell-offset-90 {
   margin-left: 90%;
 }
-/* Responsive modifiers */
 
+/* Responsive modifiers */
 @media (max-width: 24em) {
   .grid-small-fit > .cell {
     flex: 1;
