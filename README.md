@@ -1,4 +1,4 @@
-[#Grid](http://grumpywizards.github.io/Grid/)
+#[Grid](http://grumpywizards.github.io/Grid/)
 Simple grid for flexible layouts.
 
 Uses [flexbox](http://caniuse.com/#search=flex) to produce flexible easy to use classes for rows and columns.
