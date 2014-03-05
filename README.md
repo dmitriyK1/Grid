@@ -37,25 +37,15 @@ You can nest grids inside cells with relative ease...
     <div class="grid">
       <div class="cell">
         <div class="grid">
-          <div class="cell">
-            first
-          </div>
-          <div class="cell">
-            second
-          </div>
+          <div class="cell">first</div>
+          <div class="cell">second</div>
         </div>
         <div class="grid">
-          <div class="cell">
-            third
-          </div>
-          <div class="cell">
-            fourth
-          </div>
+          <div class="cell">third</div>
+          <div class="cell">fourth</div>
         </div>
       </div>
-      <div class="cell">
-        fifth
-      </div>
+      <div class="cell">fifth</div>
     </div>
 
 Little complicated to explain. This is what it should produce:
