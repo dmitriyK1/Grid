@@ -27,14 +27,14 @@ This will create a simple flexible row of cells.
 
 ###Widths
 
-    .cell-20 {
+    .cell-width-20 {
       flex: 0 0 20%;
     }
 
 ####Example
 
     <div class="grid">
-      <div class="cell cell-20">first</div>
+      <div class="cell cell-width-20">first</div>
       <div class="cell">second</div>
       <div class="cell">third</div>
     </div>
@@ -51,11 +51,11 @@ In this example the first cell is 20% the width of the grid, the other two share
 ####Example
 
     <div class="grid">
-      <div class="cell cell-10">first</div>
-      <div class="cell cell-10 cell-offset-80">second</div>
+      <div class="cell cell-width-10">first</div>
+      <div class="cell cell-width-10 cell-offset-80">second</div>
     </div>
 
-Adding `cell-offset-20` will add a `margin-left: 20%` to the cell, pushing it right.
+Adding `cell-offset-80` will add a `margin-left: 80%` to the cell, pushing it right.
 
 
 ###Wrapping
@@ -69,15 +69,15 @@ Adding `cell-offset-20` will add a `margin-left: 20%` to the cell, pushing it ri
 Here we have 2 cells, 50% and 66.6666% wide, but the grid is only 100% wide...
 
     <div class="grid">
-      <div class="cell cell-50">first</div>
-      <div class="cell cell-66">second</div>
+      <div class="cell cell-width-50">first</div>
+      <div class="cell cell-width-66">second</div>
     </div>
 
 this means the cells are now in control and have broken out of their confinment!
 
     <div class="grid grid-wrap">
-      <div class="cell cell-50">first</div>
-      <div class="cell cell-66">second</div>
+      <div class="cell cell-width-50">first</div>
+      <div class="cell cell-width-66">second</div>
     </div>
 
 Adding `grid-wrap` will push the second cell down under the first cell. **Why not just make this default behaviour?** Leaving this option to the developer provides more flexibility.
