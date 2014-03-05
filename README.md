@@ -3,8 +3,19 @@ Simple grid for flexible layouts.
 
 Uses [flexbox](http://caniuse.com/#search=flex) to produce flexible easy to use classes for rows and columns.
 
+##Contents
+  1. [Basic grid](#basicgrid)
+  1. [Nesting](#nesting)
+  1. [Widths](#widths)
+  1. [Offsets](#offsets)
+  1. [Wrapping](#wrapping)
+  1. [Vertical alignment](#vertical-alignment)
+  1. [Responsiveness](#responsiveness)
+  1. [Utility classes](#utility)
+  1. [Credits](#credits)
+
 ##How to use
-###Basic grid
+###<a name='basicgrid' href='#'>Basic grid</a>
 
     .grid {
       display: flex;
@@ -28,7 +39,7 @@ This will create a simple flexible row of cells.
     | first    | second     | third     |
     -------------------------------------
 
-###Nesting
+###<a name='nesting' href='#'>Nesting</a>
 
 You can nest grids inside cells with relative ease...
 
@@ -56,7 +67,7 @@ Little complicated to explain. This is what it should produce:
     | third      | fourth     |         |
     -------------------------------------
 
-###Widths
+###<a name='widths' href='#'>Widths</a>
 
     .cell-width-20 {
       flex: 0 0 20%;
@@ -77,7 +88,7 @@ In this example the first cell is 20% the width of the grid, the other two share
     -------------------------------------
 
 
-###Offsets
+###<a name='offsets' href='#'>Offsets</a>
 
     .cell-offset-20 {
       margin-left: 20%;
@@ -97,7 +108,7 @@ Adding `cell-offset-80` will add a `margin-left: 80%` to the cell, pushing it ri
     ---------                  ----------
 
 
-###Wrapping
+###<a name='wrapping' href='#'>Wrapping</a>
 
     .grid-wrap {
       flex-wrap: wrap;
@@ -131,7 +142,7 @@ Adding `grid-wrap` will push the second cell down under the first cell.
 **Why not just make this default behaviour?** Leaving this option to the developer provides more flexibility.
 
 
-###Vertical alignment
+###<a name='vertical-alignment' href='#'>Vertical alignment</a>
 
     /* All cells */
     .grid-top {
@@ -184,7 +195,7 @@ Notice there are two vertical aligment rules being applied to this grid. A grid 
                             | third     | fourth    |
                             -------------------------
 
-###Responsiveness
+###<a name='responsiveness' href='#'>Responsiveness</a>
 
     @media (min-width: 24em) and (max-width: 48em) {
       .grid-medium-fit > .cell {
@@ -218,7 +229,7 @@ Let's make this grid thing respond to different screen sizes...
 - `.grid-large-full` turns it all into columns again
 
 
-###Utility classes
+###<a name='utility' href='#'>Utility classes</a>
 
 There are some handy "make visible when small" and "hide when large" rules for you to play with.
 
@@ -233,7 +244,7 @@ There are some handy "make visible when small" and "hide when large" rules for y
     }
     
 
-#####Credits
+#####<a name='credits' href='#'>Credits</a>
 http://philipwalton.github.io/solved-by-flexbox/demos/grids/
 
 http://ionicframework.com/docs/components/#grid
