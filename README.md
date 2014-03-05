@@ -198,8 +198,11 @@ Notice there are two vertical aligment rules being applied to this grid. A grid 
 ###<a name='responsiveness' href='#'>Responsiveness</a>
 
     @media (min-width: 24em) and (max-width: 48em) {
-      .grid-medium-fit > .cell {
+      .grid-medium-fit > .cell:not([class*="cell-width"]) {
         flex: 1;
+      }
+      .grid-medium-full {
+        flex-wrap: wrap;
       }
       .grid-medium-full > .cell {
         flex: 0 0 100%;
