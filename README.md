@@ -24,6 +24,47 @@ Uses [flexbox](http://caniuse.com/#search=flex) to produce flexible easy to use 
 
 This will create a simple flexible row of cells.
 
+    -------------------------------------
+    | first    | second     | third     |
+    -------------------------------------
+
+###Nesting
+
+You can nest grids inside cells with relative ease...
+
+####Example
+
+    <div class="grid">
+      <div class="cell">
+        <div class="grid">
+          <div class="cell">
+            first
+          </div>
+          <div class="cell">
+            second
+          </div>
+        </div>
+        <div class="grid">
+          <div class="cell">
+            third
+          </div>
+          <div class="cell">
+            fourth
+          </div>
+        </div>
+      </div>
+      <div class="cell">
+        fifth
+      </div>
+    </div>
+
+Little complicated to explain. This is what it should produce:
+
+    -------------------------------------
+    | first      | second     | fifth   |
+    --------------------------|         |
+    | third      | fourth     |         |
+    -------------------------------------
 
 ###Widths
 
@@ -41,6 +82,10 @@ This will create a simple flexible row of cells.
 
 In this example the first cell is 20% the width of the grid, the other two share the remaining space equally.
 
+    -------------------------------------
+    | first        | second   | third   |
+    -------------------------------------
+
 
 ###Offsets
 
@@ -56,6 +101,10 @@ In this example the first cell is 20% the width of the grid, the other two share
     </div>
 
 Adding `cell-offset-80` will add a `margin-left: 80%` to the cell, pushing it right.
+
+    ---------                  ----------
+    | first |                  | second |
+    ---------                  ----------
 
 
 ###Wrapping
@@ -80,7 +129,16 @@ this means the cells are now in control and have broken out of their confinment!
       <div class="cell cell-width-66">second</div>
     </div>
 
-Adding `grid-wrap` will push the second cell down under the first cell. **Why not just make this default behaviour?** Leaving this option to the developer provides more flexibility.
+Adding `grid-wrap` will push the second cell down under the first cell.
+
+    -------------------
+    | first           |
+    -------------------
+    -----------------------
+    | second              |
+    -----------------------
+
+**Why not just make this default behaviour?** Leaving this option to the developer provides more flexibility.
 
 
 ###Vertical alignment
@@ -124,6 +182,17 @@ Adding `grid-wrap` will push the second cell down under the first cell. **Why no
 
 Notice there are two vertical aligment rules being applied to this grid. A grid wide rule of `grid-bottom` that pushes everything to the bottom, and per cell alignment rules of `cell-top` and `cell-center` that vertically align the cells to the top and center of the grid respectively.
 
+    ------------                        -------------
+    | first    |                        | fourth    |
+    ------------                        |           |
+                                        | fourth    |
+                -------------           |           |
+                | second    |           | fourth    |
+                -------------           |           |
+                                        | fourth    |
+                            -------------           |
+                            | third     | fourth    |
+                            -------------------------
 
 ###Responsiveness
 
