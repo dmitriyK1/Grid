@@ -9,7 +9,7 @@
 .grid-wrap {
   flex-wrap: wrap;
 }
-.grid > .cell {
+.cell {
   flex: 1;
   box-sizing: border-box;
 }
