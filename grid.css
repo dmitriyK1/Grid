@@ -171,6 +171,9 @@
   .grid-small-fit > .cell:not([class*="cell-width"]) {
     flex: 1;
   }
+  .grid-small-full {
+    flex-wrap: wrap;
+  }
   .grid-small-full > .cell {
     flex: 0 0 100%;
     margin-left: 0;
@@ -192,6 +195,9 @@
   .grid-medium-fit > .cell:not([class*="cell-width"]) {
     flex: 1;
   }
+  .grid-medium-full {
+    flex-wrap: wrap;
+  }
   .grid-medium-full > .cell {
     flex: 0 0 100%;
     margin-left: 0;
@@ -212,6 +218,9 @@
 @media (min-width: 48em) {
   .grid-large-fit > .cell:not([class*="cell-width"]) {
     flex: 1;
+  }
+  .grid-large-full {
+    flex-wrap: wrap;
   }
   .grid-large-full > .cell {
     flex: 0 0 100%;
