@@ -260,6 +260,8 @@ http://css-tricks.com/snippets/css/a-guide-to-flexbox/
 
 #####Licence
 
+Grid is covered by the MIT Licence
+
 Copyright (c) 2014 Grumpy Wizards
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
