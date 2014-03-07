@@ -159,6 +159,11 @@
 	flex: 0 0 95%;
 }
 
+.cell-width-100 {
+	-webkit-flex: 0 0 100%;
+	flex: 0 0 100%;
+}
+
 /* Horizontal offsets */
 .cell-offset-5 {
 	margin-left: 5%;
