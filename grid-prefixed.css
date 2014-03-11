@@ -249,6 +249,37 @@
 	margin-left: 95%;
 }
 
+/* Max-width containers */
+.container-xsmall {
+	margin: auto;
+	max-width: 20em;
+}
+
+.container-small {
+	margin: auto;
+	max-width: 30em;
+}
+
+.container-medium {
+	margin: auto;
+	max-width: 48em;
+}
+
+.container-large {
+	margin: auto;
+	max-width: 64em;
+}
+
+.container-xlarge {
+	margin: auto;
+	max-width: 78em;
+}
+
+.container-super {
+	margin: auto;
+	max-width: 116em;
+}
+
 /* Responsive modifiers */
 @media (max-width: 24em) {
 	.grid-small-fit > .cell:not([class*="cell-width"]) {
