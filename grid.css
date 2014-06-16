@@ -267,7 +267,7 @@
 	}
 
 	.visible-small {
-		display: block;
+		display: initial;
 	}
 
 	.visible-medium {
@@ -302,7 +302,7 @@
 	}
 
 	.visible-medium {
-		display: block;
+		display: initial;
 	}
 
 	.visible-large {
@@ -337,6 +337,6 @@
 	}
 
 	.visible-large {
-		display: block;
+		display: initial;
 	}
 }
