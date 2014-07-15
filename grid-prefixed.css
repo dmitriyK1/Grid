@@ -339,7 +339,7 @@
 }
 
 /* Responsive modifiers */
-@media (max-width: 24em) {
+@media (max-width: 23.99em) {
 	.grid-small-fit > .cell:not([class*="cell-width"]) {
 		-webkit-box-flex: 1;
 		-webkit-flex: 1;
@@ -378,7 +378,7 @@
 	}
 }
 
-@media (min-width: 24em) and (max-width: 48em) {
+@media (min-width: 24em) and (max-width: 47.99em) {
 	.grid-medium-fit > .cell:not([class*="cell-width"]) {
 		-webkit-box-flex: 1;
 		-webkit-flex: 1;
