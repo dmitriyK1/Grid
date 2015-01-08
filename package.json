@@ -17,7 +17,7 @@
   "bugs": {
     "url": "https://github.com/GrumpyWizards/Grid/issues"
   },
-  "homepage": "http://grumpywizards.com/Grid/",
+  "homepage": "http://grumpywizards.com/grid/",
   "devDependencies": {
     "gulp": "^3.8.10",
     "gulp-autoprefixer": "^2.0.0",
