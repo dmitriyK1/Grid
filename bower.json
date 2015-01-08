@@ -1,0 +1,26 @@
+{
+  "name": "Grid",
+  "version": "1.2.0",
+  "homepage": "http://grumpywizards.com/Grid/",
+  "authors": [
+    "Gregory Pratt <gregory.pratt@me.com>"
+  ],
+  "description": "Simple grid for flexible layouts",
+  "main": "['grid.min.css', 'grid-prefixed.min.css']",
+  "keywords": [
+    "['css'",
+    "'grid'",
+    "'flex'",
+    "'flexbox'",
+    "'flexible'",
+    "'utility']"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
