@@ -1,8 +1,8 @@
 /*
-  Flexible Grid
-  ---------------------------------------------
-  Unlimited cells with magic widths and heights
-*/
+ * Flexible Grid
+ * ---------------------------------------------
+ * Unlimited cells with magic widths and heights
+ */
 .grid {
 	display: -webkit-flex;
 	display: -ms-flexbox;
@@ -22,7 +22,9 @@
 	box-sizing: border-box;
 }
 
-/* Vertically align grid contents */
+/*
+ * Vertically align grid contents
+ */
 .grid-top {
 	-webkit-align-items: flex-start;
 	    -ms-flex-align: start;
@@ -41,7 +43,9 @@
 	        align-items: flex-end;
 }
 
-/* Vertically align individual cells */
+/*
+ * Vertically align individual cells
+ */
 .cell-top {
 	-webkit-align-self: flex-start;
 	    -ms-flex-item-align: start;
@@ -60,7 +64,9 @@
 	        align-self: flex-end;
 }
 
-/* Cell widths*/
+/*
+ * Cell widths
+ */
 .cell-width-5 {
 	-webkit-flex: 0 0 5%;
 	    -ms-flex: 0 0 5%;
@@ -193,7 +199,9 @@
 	        flex: 0 0 100%;
 }
 
-/* Horizontal offsets */
+/*
+ * Horizontal offsets
+ */
 .cell-offset-5 {
 	margin-left: 5%;
 }
@@ -278,7 +286,9 @@
 	margin-left: 95%;
 }
 
-/* Max-width containers */
+/*
+ * Max-width containers
+ */
 .container-xsmall {
 	margin: auto;
 	max-width: 20em;
@@ -309,6 +319,96 @@
 	max-width: 116em;
 }
 
+/*
+ * Padding
+ */
+.padding {
+	padding: 10px;
+}
+
+.padding-top,
+.padding-vertical {
+	padding-top: 10px;
+}
+
+.padding-right,
+.padding-horizontal {
+	padding-right: 10px;
+}
+
+.padding-bottom,
+.padding-vertical {
+	padding-bottom: 10px;
+}
+
+.padding-left,
+.padding-horizontal {
+	padding-left: 10px;
+}
+
+/*
+ * Text alignments
+ */
+.text-left {
+	text-align: left;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.text-center {
+	text-align: center;
+}
+
+/*
+ * Rounded corners
+ */
+.rounded {
+	border-radius: 3px;
+}
+
+.rounded-full {
+	border-radius: 100%;
+}
+
+/*
+ * Display element
+ */
+.inline {
+	display: inline-block;
+}
+
+/*
+ * Clicking on elements
+ */
+.clickable {
+	cursor: pointer;
+}
+
+.enable-click-through {
+	pointer-events: none;
+}
+
+.disable-click-through {
+	pointer-events: auto;
+}
+
+/*
+ * Resizable textareas
+ */
+.resize-none {
+	resize: none;
+}
+
+.resize-vertical {
+	resize: vertical;
+}
+
+.resize-horizontal {
+	resize: horizontal;
+}
+
 /* Responsive modifiers */
 @media (max-width: 23.99em) {
 	.grid-small-fit > .cell:not([class*="cell-width"]) {
@@ -323,12 +423,12 @@
 		        flex-wrap: wrap;
 	}
 
-		.grid-small-full > .cell {
-			-webkit-flex: 0 0 100%;
-			    -ms-flex: 0 0 100%;
-			        flex: 0 0 100%;
-			margin-left: 0;
-		}
+	.grid-small-full > .cell {
+		-webkit-flex: 0 0 100%;
+		    -ms-flex: 0 0 100%;
+		        flex: 0 0 100%;
+		margin-left: 0;
+	}
 
 	.hidden-small {
 		display: none !important;
@@ -360,12 +460,12 @@
 		        flex-wrap: wrap;
 	}
 
-		.grid-medium-full > .cell {
-			-webkit-flex: 0 0 100%;
-			    -ms-flex: 0 0 100%;
-			        flex: 0 0 100%;
-			margin-left: 0;
-		}
+	.grid-medium-full > .cell {
+		-webkit-flex: 0 0 100%;
+		    -ms-flex: 0 0 100%;
+		        flex: 0 0 100%;
+		margin-left: 0;
+	}
 
 	.visible-small {
 		display: none !important;
@@ -397,12 +497,12 @@
 		        flex-wrap: wrap;
 	}
 
-		.grid-large-full > .cell {
-			-webkit-flex: 0 0 100%;
-			    -ms-flex: 0 0 100%;
-			        flex: 0 0 100%;
-			margin-left: 0;
-		}
+	.grid-large-full > .cell {
+		-webkit-flex: 0 0 100%;
+		    -ms-flex: 0 0 100%;
+		        flex: 0 0 100%;
+		margin-left: 0;
+	}
 
 	.visible-small {
 		display: none !important;
