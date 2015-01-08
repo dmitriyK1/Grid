@@ -6,6 +6,7 @@ Uses [flexbox](http://caniuse.com/#search=flex) to produce flexible easy to use 
 There are 2 versions of Grid. A modern version and one with -prefixes- for better browser support.
 
 ##Contents
+  1. [Install](#install)
   1. [Basic grid](#basicgrid)
   1. [Nesting](#nesting)
   1. [Widths](#widths)
@@ -17,6 +18,15 @@ There are 2 versions of Grid. A modern version and one with -prefixes- for bette
   1. [Credits](#credits)
 
 ##How to use
+
+###<a name='install' href='#'>Install</a>
+
+`bower install wiz-grid`
+
+To find out what versions are available
+
+`bower info wiz-grid`
+
 ###<a name='basicgrid' href='#'>Basic grid</a>
 
     .grid {
