@@ -28,6 +28,7 @@
     "bower.json",
     "gulpfile.js",
     "package.json",
-    "README.md"    
+    "README.md",
+    "LICENCE"
   ]
 }
