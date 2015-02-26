@@ -1,11 +1,11 @@
-#[Grid](http://grumpywizards.github.io/Grid/)
+# [Grid](http://grumpywizards.github.io/Grid/)
 Simple grid for flexible layouts.
 
 Uses [flexbox](http://caniuse.com/#search=flex) to produce flexible easy to use classes for rows and columns.
 
 There are 2 versions of Grid. A modern version and one with -prefixes- for better browser support.
 
-##Contents
+## Contents
   1. [Install](#install)
   1. [Basic grid](#basicgrid)
   1. [Nesting](#nesting)
@@ -17,17 +17,18 @@ There are 2 versions of Grid. A modern version and one with -prefixes- for bette
   1. [Utility classes](#utility)
   1. [Credits](#credits)
 
-##How to use
+## How to use
 
-###<a name='install' href='#'>Install</a>
+### <a name='install' href='#'>Install</a>
 
 `bower install wiz-grid`
 
-To find out what versions are available
+or
 
-`bower info wiz-grid`
+`npm install grid-css --save`
 
-###<a name='basicgrid' href='#'>Basic grid</a>
+
+### <a name='basicgrid' href='#'>Basic grid</a>
 
     .grid {
       display: flex;
@@ -37,7 +38,7 @@ To find out what versions are available
       box-sizing: border-box;
     }
 
-####Example
+#### Example
 
     <div class="grid">
       <div class="cell">first</div>
@@ -51,11 +52,11 @@ This will create a simple flexible row of cells.
     | first    | second     | third     |
     -------------------------------------
 
-###<a name='nesting' href='#'>Nesting</a>
+### <a name='nesting' href='#'>Nesting</a>
 
 You can nest grids inside cells with relative ease...
 
-####Example
+#### Example
 
     <div class="grid">
       <div class="cell">
@@ -79,13 +80,13 @@ Little complicated to explain. This is what it should produce:
     | third      | fourth     |         |
     -------------------------------------
 
-###<a name='widths' href='#'>Widths</a>
+### <a name='widths' href='#'>Widths</a>
 
     .cell-width-20 {
       flex: 0 0 20%;
     }
 
-####Example
+#### Example
 
     <div class="grid">
       <div class="cell cell-width-20">first</div>
@@ -100,13 +101,13 @@ In this example the first cell is 20% the width of the grid, the other two share
     -------------------------------------
 
 
-###<a name='offsets' href='#'>Offsets</a>
+### <a name='offsets' href='#'>Offsets</a>
 
     .cell-offset-20 {
       margin-left: 20%;
     }
 
-####Example
+#### Example
 
     <div class="grid">
       <div class="cell cell-width-10">first</div>
@@ -120,13 +121,13 @@ Adding `cell-offset-80` will add a `margin-left: 80%` to the cell, pushing it ri
     ---------                  ----------
 
 
-###<a name='wrapping' href='#'>Wrapping</a>
+### <a name='wrapping' href='#'>Wrapping</a>
 
     .grid-wrap {
       flex-wrap: wrap;
     }
 
-####Example
+#### Example
 
 Here we have 2 cells, 50% and 66.6666% wide, but the grid is only 100% wide...
 
@@ -154,7 +155,7 @@ Adding `grid-wrap` will push the second cell down under the first cell.
 **Why not just make this default behaviour?** Leaving this option to the developer provides more flexibility.
 
 
-###<a name='vertical-alignment' href='#'>Vertical alignment</a>
+### <a name='vertical-alignment' href='#'>Vertical alignment</a>
 
     /* All cells */
     .grid-top {
@@ -178,7 +179,7 @@ Adding `grid-wrap` will push the second cell down under the first cell.
       align-self: flex-end;
     }
 
-####Example
+#### Example
 
     <div class="grid grid-bottom">
       <div class="cell cell-top">first</div>
@@ -207,7 +208,7 @@ Notice there are two vertical aligment rules being applied to this grid. A grid 
                             | third     | fourth    |
                             -------------------------
 
-###<a name='responsiveness' href='#'>Responsiveness</a>
+### <a name='responsiveness' href='#'>Responsiveness</a>
 
     @media (min-width: 24em) and (max-width: 48em) {
       .grid-medium-fit > .cell:not([class*="cell-width"]) {
@@ -222,7 +223,7 @@ Notice there are two vertical aligment rules being applied to this grid. A grid 
       }
     }
 
-####Example
+#### Example
 
 Let's make this grid thing respond to different screen sizes...
 
@@ -244,7 +245,7 @@ Let's make this grid thing respond to different screen sizes...
 - `.grid-large-full` turns it all into columns again
 
 
-###<a name='utility' href='#'>Utility classes</a>
+### <a name='utility' href='#'>Utility classes</a>
 
 There are some handy "make visible when small" and "hide when large" rules for you to play with.
 
@@ -258,35 +259,3 @@ There are some handy "make visible when small" and "hide when large" rules for y
       display: none;
     }
     
-
-#####<a name='credits' href='#'>Credits</a>
-http://philipwalton.github.io/solved-by-flexbox/demos/grids/
-
-http://ionicframework.com/docs/components/#grid
-
-http://getbootstrap.com/css/#grid
-
-http://css-tricks.com/snippets/css/a-guide-to-flexbox/
-
-#####Licence
-
-Grid is covered by the MIT Licence
-
-Copyright (c) 2014 Grumpy Wizards
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of
-this software and associated documentation files (the "Software"), to deal in
-the Software without restriction, including without limitation the rights to
-use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
-the Software, and to permit persons to whom the Software is furnished to do so,
-subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
-FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
-COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
-IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
-CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
